@@ -23,12 +23,17 @@ public class Part1 {
     public static void main(String[] args) {
 
         int correctAnswers = 0;
+        //function to print the capitals is called
         printCapitals();
+        //function to bubble sort and print capitals is called
         bubbleSortAndPrintCapitals();
+        //scanner is initialized
         Scanner userInput = new Scanner(System.in);
 
         System.out.println("---------------------------------------------");
 
+        //algorithm to get user input and to update the correctAnswer variable
+        //at the end, it prints out how many correct answers the user provided
         for (int i = 0; i < capitals.length; i++) {
             System.out.println();
             System.out.println();
@@ -49,6 +54,7 @@ public class Part1 {
         System.out.println("---------------------------------------------");
     }
 
+    //function to print capitals by using a for loop
     private static void printCapitals() {
         System.out.println("---------------------------------------------");
         System.out.println("State Capitals Array Without Sorting");
@@ -58,6 +64,7 @@ public class Part1 {
         }
     }
 
+    //function to bubble sort and print the array of capitals by using two for loops
     private static void bubbleSortAndPrintCapitals(){
         String temp;
         String[][] sortedCapitals = capitals;
@@ -78,6 +85,7 @@ public class Part1 {
         }
     }
 
+    //creates the capitals array
     private static final String[][] capitals = {
             {"Alabama", "Montgomery"},
             {"Alaska", "Juneau"},
